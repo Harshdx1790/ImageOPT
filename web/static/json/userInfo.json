@@ -1,0 +1,18 @@
+[
+  {
+    "Username" : "Harsh123",
+    "password" : "Harsh@123",
+    "firstName" : "Harsh",
+    "lastName" : "Solanki",
+    "Email" : "harshvardhan.solanki@karvy.com",
+    "Mobile" : "7799618089"
+  },
+  {
+    "Username" : "Karvy",
+    "password" : "Karvy@123",
+    "firstName" : "Karvy",
+    "lastName" : "Analytics",
+    "Email" : "karvyAnalytics@karvy.com",
+    "Mobile" : "1234567890"
+  }
+]

@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Image OPT</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="static/code/css/materialize.min.css">
+        <link rel="stylesheet" type="text/css" href="static/code/css/angular-material.min.css">
+        <link rel="stylesheet" type="text/css" href="static/code/css/custom.css">
+        <link rel="stylesheet" type="text/css" href="static/code/css/fontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" type="text/css" href="static/code/css/cssLoader.css">
+    </head>
+    <body>
+        <div class="wrapper" style="" >
+            <div >  
+              <nav>
+        <div class="nav-wrapper" style="background-color: #fff;color:#0d47a1 ">
+        <a href="#" class="brand-logo right"><img src="static/code/images/logo.jpg" style='width:100%;height:100%'></a>
+      <ul id="nav-mobile" class="left hide-on-med-and-down">
+        <li><img src="static/code/images/ImageOPTLogo.png"></li>
+        <!--<li><h4>Image OPT </h4></li>-->
+       
+      </ul>
+    </div>
+  </nav>
+          </div >    
+            
+            <div >
+                <nav>
+    <div style="background-color: #1e88e5" class="nav-wrapper">
+      
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><div><a href="">About us</a></div></li>
+        <li><div><a href="">Solutions</a></div></li>
+        <li><div><a href="">Learning</a></div></li>
+        <li><div><a href="">Community</a></div></li>
+        <li><div><a href="">Support</a></div></li>
+<!--        <li><div><a class="waves-effect waves-light modal-trigger" href="#modal1">Sign In</a></div></li>
+        <li><div><a class="waves-effect waves-light modal-trigger" href="#modal2">Sign Up</a></div></li>-->
+         <li id="userLoginLandingUI1" style="display: block">
+            <div><i class='material-icons prefix'>account_circle</i></div>  
+        </li>
+        <li class="userLoginLandingUI2" style="display: none;width:200px">
+            
+        </li>
+      </ul>
+    </div>
+  </nav>
+            </div>
+            
+          <div   class="row" style="margin-top: 2%">
+        <div class="col s3" style="height:800px">
+            <div  class="container"> 
+                <div class="row">
+                    <div class="col s12 " align="center" style="border:1px solid #DFDFDF;margin-top: 10%; height:50px;color: #DFDFDF"> <input type="file" style="display: none" name="file-7[]" id="file-7" onchange="getDirectory(event)" class="inputfile inputfile-6" webkitdirectory mozdirectory msdirectory odirectory directory multiple data-multiple-caption="{count} files selected" multiple />
+                        <label class="tour_1" for="file-7"  style="height:32px" ><div style="margin-top: 3%" class="col-sm-8"><span class="col s8"></span></div><strong  style=""><svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17"><path d="M10 0l-5.2 4.9h3.3v5.1h3.8v-5.1h3.3l-5.2-4.9zm9.3 11.5l-3.2-2.1h-2l3.4 2.6h-3.5c-.1 0-.2.1-.2.1l-.8 2.3h-6l-.8-2.2c-.1-.1-.1-.2-.2-.2h-3.6l3.4-2.6h-2l-3.2 2.1c-.4.3-.7 1-.6 1.5l.6 3.1c.1.5.7.9 1.2.9h16.3c.6 0 1.1-.4 1.3-.9l.6-3.1c.1-.5-.2-1.2-.7-1.5z"/></svg> Browse </strong></label> </div>
+                        <div style="color:#DFDFDF" class="col s12" align="center"> <span>Select Image Folder</span></div>
+<!--                    <div class="col s12 " align="center" style="margin-top: 10%; height:50px;color: #DFDFDF"> <input  type="file"  onchange="angular.element(this).scope().openDirecotry(event)" id="FileUpload" name="browse"  webkitdirectory mozdirectory msdirectory odirectory directory multiple /> </div>-->
+                    <!--<div class="col s12 " align="center" style="border: 1px solid;margin-top: 10%; height:50px;color: #DFDFDF"> <h6 >Set Directory </h6> </div>-->
+                    <!--<div class="col s12" align="center" style="margin-top: 7%; height:50px"> <a class="waves-effect waves-light btn" style=";background-color: #01579b">Browse</a> </div>-->
+                    <div class="col s12" align="center" style="margin-top: 20%; height:50px"> <a onclick="readStoreFrontAnalysis()" id="runImageAnalytics" class="waves-effect waves-light btn disabled" style="width:100%;background-color: #01579b">Run Image OPT</a> </div>
+                    <div class="col s12" align="center" style="margin-top: 7%; height:50px">  
+<!--                        <div style="display:none" class="progress">  
+                            <div class="indeterminate"></div>  
+                        </div> -->
+                          <div id="floatBarsG" class="" style="margin-top: 3%;display: none">
+                        <div id="floatBarsG_1" class="floatBarsG"></div>
+                        <div id="floatBarsG_2" class="floatBarsG"></div>
+                        <div id="floatBarsG_3" class="floatBarsG"></div>
+                        <div id="floatBarsG_4" class="floatBarsG"></div>
+                        <div id="floatBarsG_5" class="floatBarsG"></div>
+                        <div id="floatBarsG_6" class="floatBarsG"></div>
+                        <div id="floatBarsG_7" class="floatBarsG"></div>
+                        <div id="floatBarsG_8" class="floatBarsG"></div>
+                        </div>
+                        
+                    </div>
+                    <div class="col s12" align="center" style="margin-top: 20%; height:50px"> <a onclick="downloadStoreFrontAnalysis()" id="downloadResult" class="waves-effect waves-light btn disabled" style="width:80%;background-color: #01579b">Download Results</a>  </div>
+                </div>
+            </div>
+        </div>
+        <div  class="col s9" style="height:800px;border-left:1px solid #DFDFDF">
+          <div class="row">
+    <div  class="col s4">
+        <ul  class="tabs">
+            <li class="tab col s3" style="border-left: 2px solid #d4d4d4;border-right: 2px solid #d4d4d4;border-top: 2px solid #d4d4d4" ><a class='' style="color:#01579b"  id="reportView"  >Sample Output</a></li>
+        <li class="tab col s3" style="border-right: 2px solid #d4d4d4;border-top: 2px solid #d4d4d4"><a  style="color:#01579b" id="dashboardView"  >Analysis</a></li>
+        
+      </ul>
+    </div>
+    <div id="reportViewDiv" style="margin-top:2%;height:700px;overflow: auto" class="col s12" align="center"><h3 style="margin-top: 10%">"There is no data to display. <br />Please run Karvy engine to load the data"</h3> </div>
+    <div id="dashboardViewDiv" style="margin-top:2%;height:500px;display:none" class="col s12">"There is no data to display.</div>
+    
+  </div>  
+        </div>
+    </div>
+          
+          
+           <!--login form--> 
+      
+          <div style="width:500px" align="center" id="modal1" class="modal">
+              <div class="modal-content">
+                  <h4>Sign In </h4>
+                  <p>Please enter your details</p>
+                  <div class="row">
+                      <form class="col s12">
+                          <div class="input-field col s12">
+                              <i class="material-icons prefix">account_circle</i>
+                              <input id="user_name" type="text" class="validate">
+                              <label for="user_name">User Name</label>
+                          </div>
+                          <div class="input-field col s12">
+                              <i class="material-icons prefix">vpn_key</i>
+                              <input id="password" type="password" class="validate">
+                              <label for="password">Password</label>
+                          </div>
+                      </form>
+                  </div>    
+              </div>
+              <div class="modal-footer">
+                  <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+              </div>
+          </div>
+          
+          
+          <!--end of login form--> 
+          
+            <!--registration form-->
+          <div style="" align="center" id="modal2" class="modal">
+              <div class="modal-content">
+                  <h4>Registration Form </h4>
+                  <p>Please enter your details</p>
+                   <div class="row">
+                              <div class="input-field col s12">
+                                   <i class="material-icons prefix">account_circle</i>
+                                  <input id="uName" type="text" class="validate">
+                                  <label for="uName">User Name</label>
+                              </div>
+                          </div>
+                  <div class="row">
+                      <form class="col s12">
+                          <div class="row">
+                              <div class="input-field col s6">
+                                  <i class="material-icons prefix">perm_identity</i>
+                                  <input  id="first_name" type="text" class="validate">
+                                  <label for="first_name">First Name</label>
+                              </div>
+                              <div class="input-field col s6">
+                                  <i class="material-icons prefix">perm_identity</i>
+                                  <input id="last_name" type="text" class="validate">
+                                  <label for="last_name">Last Name</label>
+                              </div>
+                          </div>
+<!--                          <div class="row">
+                              <div class="input-field col s12">
+                                  <input disabled value="I am not editable" id="disabled" type="text" class="validate">
+                                  <label for="disabled">Disabled</label>
+                              </div>
+                          </div>-->
+                          <div class="row">
+                              <div class="input-field col s12">
+                                   <i class="material-icons prefix">vpn_key</i>
+                                  <input id="pwd" type="password" class="validate">
+                                  <label for="pwd">Password</label>
+                              </div>
+                          </div>
+                         
+                          <div class="row">
+                              <div class="input-field col s6">
+                                  <i class="material-icons prefix">email</i>
+                                  <input id="email" type="email" class="validate">
+                                  <label for="email">Email</label>
+                              </div>
+                          
+                              <div class="input-field col s6">
+                                  <i class="material-icons prefix">phone</i>
+                                  <input id="icon_telephone" type="tel" class="validate">
+                                  <label for="icon_telephone">Telephone</label> 
+                              </div>
+                          </div>
+                      </form>
+                  </div>
+              </div>
+              <div class="modal-footer">
+                  <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+              </div>
+          </div>     
+          <!--end of registration form--> 
+          
+          
+            <div >
+                <footer class="page-footer" style="background-color: #0d47a1">
+          <div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+                <h5 class="white-text">Karvy Analytics </h5>
+                <p style="margin:0;font-style: italic;font-family: -webkit-body;" class="grey-text text-lighten-4">Plot No.31,</p>
+                <p style="margin:0;font-style: italic;font-family: -webkit-body;" class="grey-text text-lighten-4">Financial District,</p>
+                <p style="margin:0;font-style: italic;font-family: -webkit-body;" class="grey-text text-lighten-4">Gachibowli,</p>
+                <p style="margin:0;font-style: italic;font-family: -webkit-body;" class="grey-text text-lighten-4">Hyderabad - 500 032,</p>
+                <p style="margin:0;font-style: italic;font-family: -webkit-body;" class="grey-text text-lighten-4">India.</p>
+              </div>
+              <div class="col l4 offset-l2 s12">
+                <h5 class="white-text">Links</h5>
+                <ul>
+                  <li><a class="grey-text text-lighten-3" href="#!"><i class="fa fa-facebook-official" aria-hidden="true"></i>  Facebook </a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!"><i class="fa fa-linkedin-square" aria-hidden="true"></i> LinkedIn</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!"><i class="fa fa-youtube-square" aria-hidden="true"></i> YouTube</a></li>
+                  
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+              <div align="center" style="font-size: small;" class="container">
+            Contact Us .  Site Map .  Terms & Conditions . Privacy Policy . <i class="fa fa-copyright" aria-hidden="true"></i> 2016 Powered by @ Karvy Analytics .
+            <a class="grey-text text-lighten-4 right" href="#!"></a>
+            </div>
+          </div>
+        </footer>
+                
+            </div>
+            
+            
+            
+            
+        </div>
+        <script type="text/javascript" src="static/code/JS/angular/angular.min.js"></script>
+        <script type="text/javascript" src="static/code/JS/angular/angular-route.min.js"></script>
+        <script type="text/javascript" src="static/code/JS/angular/angular-animate.min.js"></script>
+        <script type="text/javascript" src="static/code/JS/angular/angular-aria.min.js"></script>
+        <script type="text/javascript" src="static/code/JS/angular/angular-messages.min.js"></script>
+        <script type="text/javascript" src="static/code/JS/angular/angular-material.min.js"></script>
+        <script type="text/javascript" src="static/code/JS/jquery.min.js"></script>
+        <script type="text/javascript" src="static/code/JS/materialize.min.js"></script>
+        <script type="text/javascript" src="static/code/scripts/process.js"></script> 
+        <script type="text/javascript">
+//            $('.carousel').carousel();
+  
+    // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
+     $('.modal-trigger').leanModal();
+ $('.slider').slider();
+
+$( document ).ready(function() {
+    appendUserInfo()
+});
+            </script>
+    </body>
+</html>
